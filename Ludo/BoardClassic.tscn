@@ -1,0 +1,436 @@
+[gd_scene format=3 uid="uid://iiti6u4emr47"]
+
+[ext_resource type="PackedScene" uid="uid://xkavqkls2c8e" path="res://player.tscn" id="2_00kxd"]
+[ext_resource type="PackedScene" uid="uid://bunrd6i4lnswp" path="res://BoardBase.tscn" id="3_8uf2h"]
+[ext_resource type="PackedScene" uid="uid://bfsmmkn1vwy8o" path="res://BoardPiece.tscn" id="4_8uf2h"]
+[ext_resource type="PackedScene" uid="uid://pii87dfsme40" path="res://SourceHop-Models/LudoSkybox1.blend" id="5_4r5qu"]
+[ext_resource type="Material" uid="uid://b3mextmfjnb44" path="res://SourceHop-Models/materials/Ludo Board Piece/p1.tres" id="5_r8b5k"]
+[ext_resource type="Material" uid="uid://c83el6cfpydi5" path="res://SourceHop-Models/materials/Ludo Board Piece/p2.tres" id="6_c4sai"]
+[ext_resource type="Material" uid="uid://mu0rjx51wmeb" path="res://SourceHop-Models/materials/Ludo Board Piece/p3.tres" id="6_wt5rk"]
+[ext_resource type="Material" uid="uid://dkff8qersf21h" path="res://SourceHop-Models/materials/Ludo Board Piece/p4.tres" id="7_faf72"]
+
+[node name="Node3D" type="Node3D" unique_id=1624971264]
+
+[node name="Player" parent="." unique_id=295731897 instance=ExtResource("2_00kxd")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, 1.0463917, 0.24214633, 0.26556027)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=704371874]
+transform = Transform3D(2.7252378, 0, 0, 0, 2.6323776, 0.7053436, 0, -0.7053436, 2.6323776, 0.0003124224, 1.0458888, 3.1609707)
+current = true
+fov = 45.0
+
+[node name="Base" parent="." unique_id=1495843203 instance=ExtResource("3_8uf2h")]
+transform = Transform3D(0.5604128, 0, 0, 0, 0.5604128, 0, 0, 0, 0.5604128, 0.0021840003, -0.0039736135, 0.056948476)
+
+[node name="WhitePieces" type="Node" parent="." unique_id=1401385293]
+
+[node name="white1" parent="WhitePieces" unique_id=1904183647 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, 0.83206975, -0.044303514, 0.2617434)
+
+[node name="white2" parent="WhitePieces" unique_id=2063799348 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, 0.6224872, -0.044303514, 0.2623479)
+
+[node name="white3" parent="WhitePieces" unique_id=1306552718 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, 0.4098278, -0.044303514, 0.2631122)
+
+[node name="white4" parent="WhitePieces" unique_id=1630606984 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, 0.19844668, -0.044303514, 0.26325795)
+
+[node name="white5" parent="WhitePieces" unique_id=1301467622 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, 0.19622253, -0.044303514, 0.47525704)
+
+[node name="white6" parent="WhitePieces" unique_id=1724490004 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, 0.1996818, -0.044303514, 0.69110787)
+
+[node name="white7" parent="WhitePieces" unique_id=498600628 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, 0.1971148, -0.044303514, 0.9036088)
+
+[node name="white8" parent="WhitePieces" unique_id=468018618 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, 0.19763336, -0.044303514, 1.1147709)
+
+[node name="white9" parent="WhitePieces" unique_id=261062206 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, -0.022317754, -0.044303514, 1.1144338)
+
+[node name="white10" parent="WhitePieces" unique_id=399945022 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, -0.24272108, -0.044303514, 0.9032204)
+
+[node name="white11" parent="WhitePieces" unique_id=1081734267 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, -0.24425143, -0.044303574, 0.69118506)
+
+[node name="white12" parent="WhitePieces" unique_id=258410414 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, -0.24418584, -0.044303574, 0.47732088)
+
+[node name="white13" parent="WhitePieces" unique_id=843126651 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, -0.24366029, -0.044303574, 0.2620452)
+
+[node name="white14" parent="WhitePieces" unique_id=1732546663 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, -0.45591575, -0.044303574, 0.26155582)
+
+[node name="white15" parent="WhitePieces" unique_id=1464403008 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, -0.66871345, -0.044303574, 0.26416224)
+
+[node name="white16" parent="WhitePieces" unique_id=1113580354 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, -0.87918, -0.044303574, 0.26251048)
+
+[node name="white17" parent="WhitePieces" unique_id=1337877846 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, -1.0911442, -0.044303574, 0.2641347)
+
+[node name="white18" parent="WhitePieces" unique_id=826800997 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, -1.0924486, -0.044303574, 0.044090986)
+
+[node name="white19" parent="WhitePieces" unique_id=1996463250 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, -0.8782182, -0.044303574, -0.16954845)
+
+[node name="white20" parent="WhitePieces" unique_id=2075434097 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, -0.66572934, -0.044303574, -0.17360225)
+
+[node name="white21" parent="WhitePieces" unique_id=2010633328 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, -0.45669794, -0.044303574, -0.17087606)
+
+[node name="white22" parent="WhitePieces" unique_id=1199601045 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, -0.24589495, -0.044303574, -0.17012379)
+
+[node name="white23" parent="WhitePieces" unique_id=1050269543 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, -0.24174342, -0.044303574, -0.38383508)
+
+[node name="white24" parent="WhitePieces" unique_id=2143624353 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, -0.23924732, -0.044303574, -0.5970791)
+
+[node name="white25" parent="WhitePieces" unique_id=703900237 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, -0.24334794, -0.044303574, -0.8087868)
+
+[node name="white26" parent="WhitePieces" unique_id=1480886248 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, -0.24410844, -0.044303574, -1.0212755)
+
+[node name="white27" parent="WhitePieces" unique_id=878783461 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, -0.021520017, -0.044303574, -1.0229626)
+
+[node name="white28" parent="WhitePieces" unique_id=816822162 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, 0.19624232, -0.044303574, -0.8085058)
+
+[node name="white29" parent="WhitePieces" unique_id=813532614 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, 0.19550924, -0.044303574, -0.59696096)
+
+[node name="white30" parent="WhitePieces" unique_id=417766559 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, 0.19841067, -0.044303574, -0.3865283)
+
+[node name="white31" parent="WhitePieces" unique_id=1752664818 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, 0.19858378, -0.044303574, -0.17117631)
+
+[node name="white32" parent="WhitePieces" unique_id=842305803 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, 0.40967938, -0.044303574, -0.17216432)
+
+[node name="white33" parent="WhitePieces" unique_id=1860078475 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, 0.61981857, -0.044303574, -0.17163005)
+
+[node name="white34" parent="WhitePieces" unique_id=1189520218 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, 0.8336164, -0.044303574, -0.17098853)
+
+[node name="white35" parent="WhitePieces" unique_id=2094046383 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, 1.04218, -0.044303574, -0.17203078)
+
+[node name="white36" parent="WhitePieces" unique_id=12751679 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, 1.0443581, -0.044303574, 0.04572831)
+
+[node name="Player1Pieces" type="Node" parent="." unique_id=1401588499]
+
+[node name="player1 start" parent="Player1Pieces" unique_id=1102470956 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, 1.0472205, -0.044303514, 0.26315543)
+
+[node name="Plane" parent="Player1Pieces/player1 start/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(1102470956, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("5_r8b5k")
+
+[node name="player1 home1" parent="Player1Pieces" unique_id=1189243797 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 17.567856, 0, 0, 0, 8.567005, 0.8301217, -0.040939234, 0.044419006)
+
+[node name="Plane" parent="Player1Pieces/player1 home1/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(1189243797, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("5_r8b5k")
+
+[node name="player1 home2" parent="Player1Pieces" unique_id=766287764 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 30.716639, 0, 0, 0, 8.567005, 0.62453175, -0.037386797, 0.044049963)
+
+[node name="Plane" parent="Player1Pieces/player1 home2/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(766287764, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("5_r8b5k")
+
+[node name="player1 home3" parent="Player1Pieces" unique_id=1096997355 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 56.476364, 0, 0, 0, 8.567005, 0.4108136, -0.018665977, 0.049409024)
+
+[node name="Plane" parent="Player1Pieces/player1 home3/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(1096997355, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("5_r8b5k")
+
+[node name="player1 home4" parent="Player1Pieces" unique_id=1193582971 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 93.77855, 0, 0, 0, 8.567005, 0.19477645, 0.009802349, 0.046715878)
+
+[node name="Plane" parent="Player1Pieces/player1 home4/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(1193582971, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("5_r8b5k")
+
+[node name="player1 base1" parent="Player1Pieces" unique_id=1767112868 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, 1.057106, -0.044303514, 0.8996612)
+
+[node name="Plane" parent="Player1Pieces/player1 base1/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(1767112868, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("5_r8b5k")
+
+[node name="player1 base2" parent="Player1Pieces" unique_id=848750641 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, 1.0558584, -0.044303514, 1.1169256)
+
+[node name="Plane" parent="Player1Pieces/player1 base2/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(848750641, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("5_r8b5k")
+
+[node name="player1 base3" parent="Player1Pieces" unique_id=1785851406 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, 0.8381254, -0.044303514, 0.90271395)
+
+[node name="Plane" parent="Player1Pieces/player1 base3/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(1785851406, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("5_r8b5k")
+
+[node name="player1 base4" parent="Player1Pieces" unique_id=363686060 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, 0.835343, -0.044303514, 1.1170831)
+
+[node name="Plane" parent="Player1Pieces/player1 base4/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(363686060, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("5_r8b5k")
+
+[node name="Player2Pieces" type="Node" parent="." unique_id=291836993]
+
+[node name="player2 start" parent="Player2Pieces" unique_id=1094187941 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, -1.0936005, -0.044303514, -0.17100278)
+
+[node name="Plane" parent="Player2Pieces/player2 start/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(1094187941, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("6_c4sai")
+
+[node name="player2 home1" parent="Player2Pieces" unique_id=810359119 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 17.567856, 0, 0, 0, 8.567005, -0.87682587, -0.040939234, 0.045345128)
+
+[node name="Plane" parent="Player2Pieces/player2 home1/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(810359119, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("6_c4sai")
+
+[node name="player2 home2" parent="Player2Pieces" unique_id=1578275559 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 30.716639, 0, 0, 0, 8.567005, -0.6689571, -0.037386797, 0.045924567)
+
+[node name="Plane" parent="Player2Pieces/player2 home2/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(1578275559, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("6_c4sai")
+
+[node name="player2 home3" parent="Player2Pieces" unique_id=583448193 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 56.476364, 0, 0, 0, 8.567005, -0.45651305, -0.018665977, 0.04544895)
+
+[node name="Plane" parent="Player2Pieces/player2 home3/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(583448193, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("6_c4sai")
+
+[node name="player2 home4" parent="Player2Pieces" unique_id=664884239 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 93.77855, 0, 0, 0, 8.567005, -0.24393824, 0.009802349, 0.044270128)
+
+[node name="Plane" parent="Player2Pieces/player2 home4/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(664884239, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("6_c4sai")
+
+[node name="player2 base1" parent="Player2Pieces" unique_id=73179781 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, -1.1026573, -0.044303514, -0.79584247)
+
+[node name="Plane" parent="Player2Pieces/player2 base1/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(73179781, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("6_c4sai")
+
+[node name="player2 base2" parent="Player2Pieces" unique_id=1324357586 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, -1.1011463, -0.044303514, -1.0123916)
+
+[node name="Plane" parent="Player2Pieces/player2 base2/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(1324357586, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("6_c4sai")
+
+[node name="player2 base3" parent="Player2Pieces" unique_id=1522923695 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, -0.88339895, -0.044303514, -1.0131079)
+
+[node name="Plane" parent="Player2Pieces/player2 base3/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(1522923695, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("6_c4sai")
+
+[node name="player2 base4" parent="Player2Pieces" unique_id=1960030121 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, -0.87883955, -0.044303514, -0.7909214)
+
+[node name="Plane" parent="Player2Pieces/player2 base4/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(1960030121, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("6_c4sai")
+
+[node name="Player3Pieces" type="Node" parent="." unique_id=2135090544]
+
+[node name="player3 start" parent="Player3Pieces" unique_id=699110334 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, 0.19722363, -0.044303514, -1.0242538)
+
+[node name="Plane" parent="Player3Pieces/player3 start/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(699110334, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("6_wt5rk")
+
+[node name="player3 base1" parent="Player3Pieces" unique_id=1261426099 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, 0.8423688, -0.044303514, -1.0132853)
+
+[node name="Plane" parent="Player3Pieces/player3 base1/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(1261426099, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("6_wt5rk")
+
+[node name="player3 base2" parent="Player3Pieces" unique_id=1423633709 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, 1.0571713, -0.044303514, -1.0133682)
+
+[node name="Plane" parent="Player3Pieces/player3 base2/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(1423633709, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("6_wt5rk")
+
+[node name="player3 base3" parent="Player3Pieces" unique_id=968859057 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, 1.0614933, -0.044303544, -0.8006201)
+
+[node name="Plane" parent="Player3Pieces/player3 base3/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(968859057, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("6_wt5rk")
+
+[node name="player3 base4" parent="Player3Pieces" unique_id=176451982 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, 0.8410395, -0.044303574, -0.80189055)
+
+[node name="Plane" parent="Player3Pieces/player3 base4/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(176451982, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("6_wt5rk")
+
+[node name="player3 home1" parent="Player3Pieces" unique_id=1350713071 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 17.567856, 0, 0, 0, 8.567005, -0.021087825, -0.040939234, -0.8083133)
+
+[node name="Plane" parent="Player3Pieces/player3 home1/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(1350713071, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("6_wt5rk")
+
+[node name="player3 home2" parent="Player3Pieces" unique_id=346380698 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 30.716639, 0, 0, 0, 8.567005, -0.024921983, -0.037386797, -0.6009562)
+
+[node name="Plane" parent="Player3Pieces/player3 home2/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(346380698, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("6_wt5rk")
+
+[node name="player3 home3" parent="Player3Pieces" unique_id=768643622 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 56.476364, 0, 0, 0, 8.567005, -0.022892632, -0.018665977, -0.38398463)
+
+[node name="Plane" parent="Player3Pieces/player3 home3/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(768643622, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("6_wt5rk")
+
+[node name="player3 home4" parent="Player3Pieces" unique_id=1273112198 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 93.77855, 0, 0, 0, 8.567005, -0.020310163, 0.009802349, -0.17023167)
+
+[node name="Plane" parent="Player3Pieces/player3 home4/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(1273112198, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("6_wt5rk")
+
+[node name="Player4Pieces" type="Node" parent="." unique_id=2087348626]
+
+[node name="player4 start" parent="Player4Pieces" unique_id=1598206949 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, -0.24380739, -0.044303514, 1.1160185)
+
+[node name="Plane" parent="Player4Pieces/player4 start/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(1598206949, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("7_faf72")
+
+[node name="player4 home1" parent="Player4Pieces" unique_id=1430603866 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 17.567856, 0, 0, 0, 8.567005, -0.023987927, -0.040939234, 0.9037715)
+
+[node name="Plane" parent="Player4Pieces/player4 home1/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(1430603866, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("7_faf72")
+
+[node name="player4 home2" parent="Player4Pieces" unique_id=2032717640 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 30.716639, 0, 0, 0, 8.567005, -0.02623653, -0.037386797, 0.69053966)
+
+[node name="Plane" parent="Player4Pieces/player4 home2/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(2032717640, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("7_faf72")
+
+[node name="player4 home3" parent="Player4Pieces" unique_id=1445435272 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 56.476364, 0, 0, 0, 8.567005, -0.027123192, -0.018665977, 0.4743455)
+
+[node name="Plane" parent="Player4Pieces/player4 home3/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(1445435272, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("7_faf72")
+
+[node name="player4 home4" parent="Player4Pieces" unique_id=1031968168 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 93.77855, 0, 0, 0, 8.567005, -0.027333718, 0.009802349, 0.2655959)
+
+[node name="Plane" parent="Player4Pieces/player4 home4/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(1031968168, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("7_faf72")
+
+[node name="base1" parent="Player4Pieces" unique_id=933694069 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, -0.8812456, -0.044303514, 1.1152931)
+
+[node name="Plane" parent="Player4Pieces/base1/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(933694069, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("7_faf72")
+
+[node name="base2" parent="Player4Pieces" unique_id=1575998668 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, -1.1002753, -0.044303514, 1.1164411)
+
+[node name="Plane" parent="Player4Pieces/base2/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(1575998668, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("7_faf72")
+
+[node name="base3" parent="Player4Pieces" unique_id=1179507474 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, -1.1037301, -0.044303514, 0.90534633)
+
+[node name="Plane" parent="Player4Pieces/base3/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(1179507474, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("7_faf72")
+
+[node name="base4" parent="Player4Pieces" unique_id=1055982602 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 8.567005, 0, 0, 0, 8.567005, -0.87883717, -0.044303514, 0.9050028)
+
+[node name="Plane" parent="Player4Pieces/base4/RigidBody3D/Ludo Board Piece" parent_id_path=PackedInt32Array(1055982602, 1954248678) index="2" unique_id=49514517]
+surface_material_override/0 = ExtResource("7_faf72")
+
+[node name="Winners Throne" parent="." unique_id=125408392 instance=ExtResource("4_8uf2h")]
+transform = Transform3D(8.567005, 0, 0, 0, 178.40834, 0, 0, 0, 8.567005, -0.017309539, 0.059715293, 0.03765031)
+
+[node name="LudoSkybox1" parent="." unique_id=1388612874 instance=ExtResource("5_4r5qu")]
+transform = Transform3D(1.4896625, 0, 0, 0, 1.4896625, 0, 0, 0, 1.4896625, 0, 0, 0)
+
+[editable path="Player1Pieces/player1 start"]
+[editable path="Player1Pieces/player1 start/RigidBody3D/Ludo Board Piece"]
+[editable path="Player1Pieces/player1 home1"]
+[editable path="Player1Pieces/player1 home1/RigidBody3D/Ludo Board Piece"]
+[editable path="Player1Pieces/player1 home2"]
+[editable path="Player1Pieces/player1 home2/RigidBody3D/Ludo Board Piece"]
+[editable path="Player1Pieces/player1 home3"]
+[editable path="Player1Pieces/player1 home3/RigidBody3D/Ludo Board Piece"]
+[editable path="Player1Pieces/player1 home4"]
+[editable path="Player1Pieces/player1 home4/RigidBody3D/Ludo Board Piece"]
+[editable path="Player1Pieces/player1 base1"]
+[editable path="Player1Pieces/player1 base1/RigidBody3D/Ludo Board Piece"]
+[editable path="Player1Pieces/player1 base2"]
+[editable path="Player1Pieces/player1 base2/RigidBody3D/Ludo Board Piece"]
+[editable path="Player1Pieces/player1 base3"]
+[editable path="Player1Pieces/player1 base3/RigidBody3D/Ludo Board Piece"]
+[editable path="Player1Pieces/player1 base4"]
+[editable path="Player1Pieces/player1 base4/RigidBody3D/Ludo Board Piece"]
+[editable path="Player2Pieces/player2 start"]
+[editable path="Player2Pieces/player2 start/RigidBody3D/Ludo Board Piece"]
+[editable path="Player2Pieces/player2 home1"]
+[editable path="Player2Pieces/player2 home1/RigidBody3D/Ludo Board Piece"]
+[editable path="Player2Pieces/player2 home2"]
+[editable path="Player2Pieces/player2 home2/RigidBody3D/Ludo Board Piece"]
+[editable path="Player2Pieces/player2 home3"]
+[editable path="Player2Pieces/player2 home3/RigidBody3D/Ludo Board Piece"]
+[editable path="Player2Pieces/player2 home4"]
+[editable path="Player2Pieces/player2 home4/RigidBody3D/Ludo Board Piece"]
+[editable path="Player2Pieces/player2 base1"]
+[editable path="Player2Pieces/player2 base1/RigidBody3D/Ludo Board Piece"]
+[editable path="Player2Pieces/player2 base2"]
+[editable path="Player2Pieces/player2 base2/RigidBody3D/Ludo Board Piece"]
+[editable path="Player2Pieces/player2 base3"]
+[editable path="Player2Pieces/player2 base3/RigidBody3D/Ludo Board Piece"]
+[editable path="Player2Pieces/player2 base4"]
+[editable path="Player2Pieces/player2 base4/RigidBody3D/Ludo Board Piece"]
+[editable path="Player3Pieces/player3 start"]
+[editable path="Player3Pieces/player3 start/RigidBody3D/Ludo Board Piece"]
+[editable path="Player3Pieces/player3 base1"]
+[editable path="Player3Pieces/player3 base1/RigidBody3D/Ludo Board Piece"]
+[editable path="Player3Pieces/player3 base2"]
+[editable path="Player3Pieces/player3 base2/RigidBody3D/Ludo Board Piece"]
+[editable path="Player3Pieces/player3 base3"]
+[editable path="Player3Pieces/player3 base3/RigidBody3D/Ludo Board Piece"]
+[editable path="Player3Pieces/player3 base4"]
+[editable path="Player3Pieces/player3 base4/RigidBody3D/Ludo Board Piece"]
+[editable path="Player3Pieces/player3 home1"]
+[editable path="Player3Pieces/player3 home1/RigidBody3D/Ludo Board Piece"]
+[editable path="Player3Pieces/player3 home2"]
+[editable path="Player3Pieces/player3 home2/RigidBody3D/Ludo Board Piece"]
+[editable path="Player3Pieces/player3 home3"]
+[editable path="Player3Pieces/player3 home3/RigidBody3D/Ludo Board Piece"]
+[editable path="Player3Pieces/player3 home4"]
+[editable path="Player3Pieces/player3 home4/RigidBody3D/Ludo Board Piece"]
+[editable path="Player4Pieces/player4 start"]
+[editable path="Player4Pieces/player4 start/RigidBody3D/Ludo Board Piece"]
+[editable path="Player4Pieces/player4 home1"]
+[editable path="Player4Pieces/player4 home1/RigidBody3D/Ludo Board Piece"]
+[editable path="Player4Pieces/player4 home2"]
+[editable path="Player4Pieces/player4 home2/RigidBody3D/Ludo Board Piece"]
+[editable path="Player4Pieces/player4 home3"]
+[editable path="Player4Pieces/player4 home3/RigidBody3D/Ludo Board Piece"]
+[editable path="Player4Pieces/player4 home4"]
+[editable path="Player4Pieces/player4 home4/RigidBody3D/Ludo Board Piece"]
+[editable path="Player4Pieces/base1"]
+[editable path="Player4Pieces/base1/RigidBody3D/Ludo Board Piece"]
+[editable path="Player4Pieces/base2"]
+[editable path="Player4Pieces/base2/RigidBody3D/Ludo Board Piece"]
+[editable path="Player4Pieces/base3"]
+[editable path="Player4Pieces/base3/RigidBody3D/Ludo Board Piece"]
+[editable path="Player4Pieces/base4"]
+[editable path="Player4Pieces/base4/RigidBody3D/Ludo Board Piece"]

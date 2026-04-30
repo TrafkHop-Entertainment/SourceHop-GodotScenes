@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bfsmmkn1vwy8o"]
+
+[ext_resource type="PackedScene" uid="uid://dpgc1p37o418n" path="res://SourceHop-Models/Ludo Board Piece.blend" id="1_oys4c"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_m5unp"]
+height = 0.0016860962
+radius = 0.010253906
+
+[node name="Node3D" type="Node3D" unique_id=1904183647]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." unique_id=1071483116]
+freeze = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" unique_id=283557518]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.779524e-05, 0)
+shape = SubResource("CylinderShape3D_m5unp")
+
+[node name="Ludo Board Piece" parent="RigidBody3D" unique_id=1954248678 instance=ExtResource("1_oys4c")]
