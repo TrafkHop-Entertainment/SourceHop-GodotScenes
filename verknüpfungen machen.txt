@@ -1,0 +1,4 @@
+Im root ordner:
+
+z.B.:
+ln -s ../../../assets/SourceHop-Models SourceHop-Notes/assets/SourceHop-GodotScenes/Ludo/SourceHop-Models
